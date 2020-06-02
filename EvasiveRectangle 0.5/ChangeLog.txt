@@ -1,0 +1,30 @@
+EvasiveRectangle 5.0 - The Enemy AI Update
+
+-----Changelog-----
+* Added a new behavior for enemies that causes them to wander when the 
+  player is not on the same platform
+* Depending on whether or not the player is above or below an enemy they 
+  may stay on their current platform 
+* Enemies will attempt to jump to platforms in reach above them if the player 
+  is on higher ground than them
+* The jump method can now be used for any entity
+* Moved several player specific global variables into the player object
+* Moved some of the groundCheck protocol to the updatePlayer method
+* Updated loop syntax in most cases
+* Widened map
+
+-----BackLog-----
+* Add a new type of enemy
+	- potentially a boss enemy that only spawns later
+	- may need a new method or a re-work of the Enemy method
+	  that allows for more flexible enemy design
+* Change how scoring works or potentially add a new way to obtain score
+* Add a main menu
+* Create and implement a procedurally generating tile map
+	- would erase offscreen enemies and tiles and spawn in new ones
+* Adjust player/Enemy movement speed to be less snappy
+
+
+
+
+

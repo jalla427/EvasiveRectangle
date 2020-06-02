@@ -1,0 +1,39 @@
+EvasiveRectangle 3.0
+
+-----Changelog-----
+* Removed unused code in multiple locations
+* Added two new tiles (platforms) to the game
+* Added the ability to make a platform a moving platform
+	- created the method movingTile to deal with tiles that 
+          are meant to move
+	- can change the range that the platform moves
+	- can change the speed at which it moves
+	- currently only handles movement on the y-axis
+* Updated how the player and enemies find the ground
+	- the player/enemy objects now knows how to allign 
+	  themselves with moving platforms
+* Made the Enemy and Tile methods make use of the push method
+* Updated the syntax of the for loops within the update methods 
+  for Enemies and Tiles
+* Gravity for enemies is now drawn from that enemies vy property
+* Updated the groundCheck method to account for wether or not the 
+  player is jumping
+
+-----BackLog-----
+* Add many more platforms
+* Allow the creation of platforms that move on the x-axis
+* Update Enemy AI to jump under certain circumstances
+	- first steps to allowing the enemies to follow the player vertically
+* Add a new type of enemy
+	- potentially a boss enemy that only spawns later
+	- may need a new method to define or a re-work of the Enemy method
+	  that allows for more flexible enemy design
+* Change how scoring works or potentially add a new way to obtain score
+* Re-do for loop syntax in most instances
+* Create universal checkGround function that can be applied to 
+  enemies and player
+* Fix code in multiple locations that is unecessarily executed repeatedly
+
+
+
+

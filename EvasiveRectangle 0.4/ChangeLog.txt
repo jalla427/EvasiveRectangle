@@ -1,0 +1,29 @@
+EvasiveRectangle 4.0
+
+-----Changelog-----
+* Added more platforms
+* Allowed the creation of platforms that move on the x-axis
+* More platforms are now present
+* Made the player and enemies move with the moving platform they are on
+* Re-worked how velocity is handled for enemies
+* Fixed a bug that made the player/enemies teleport onto a platform when 
+  touching the bottom of the platform
+* Created universal groundCheck function that can be applied to 
+  enemies and player
+
+-----BackLog-----
+* Update Enemy AI
+	- jump under certain circumstances to help the enemies to follow the player vertically
+	- add new behavior for when they cannot reach the player
+* Add a new type of enemy
+	- potentially a boss enemy that only spawns later
+	- may need a new method or a re-work of the Enemy method
+	  that allows for more flexible enemy design
+* Change how scoring works or potentially add a new way to obtain score
+* Re-do for loop syntax in most instances
+* Fix code in multiple locations that is unecessarily executed repeatedly
+* Move player/enemy specific code out of the groundCheck function
+
+
+
+
